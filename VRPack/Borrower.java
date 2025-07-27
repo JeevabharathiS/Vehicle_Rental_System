@@ -127,7 +127,7 @@ public class Borrower extends User {
         rentedVehicles.put(id, v);
         rentalHistory.add(id);
         v.setAvailableCount(v.getAvailableCount() - 1);
-        System.out.println("Vehicle Rented Successfully.");
+        System.out.println("\nVehicle Rented Successfully.");
     }
 
     public void returnVehicle(String id){
@@ -161,7 +161,7 @@ public class Borrower extends User {
 
         v.setAvailableCount(v.getAvailableCount() + 1);
         rentedVehicles.remove(id);
-        System.out.println("Vehicle Returned.");
+        System.out.println("\nVehicle Returned.");
     }
 
     public void extendRental(String id){
@@ -170,7 +170,7 @@ public class Borrower extends User {
             return;
         }
 
-        System.out.println("Rental Extended by One More Day.");
+        System.out.println("\nRental Extended by One More Day.");
     }
 
     public void viewMyRentals(){

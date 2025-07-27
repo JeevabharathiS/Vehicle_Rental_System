@@ -20,6 +20,7 @@ public class Demo {
 
             switch (choice) {
                 case 1:
+                    System.out.println();
                     String email = Utils.getValidString(sc, "Enter Email: ");
                     String password = Utils.getValidString(sc, "Enter Password: ");
                     User user = system.authenticateUser(email, password);
@@ -32,11 +33,14 @@ public class Demo {
                     break;
 
                 case 0:
+                    System.out.println();
                     System.out.println("Exiting...");
                     return;
 
                 default:
+                    System.out.println();
                     System.out.println("Invalid Choice");
+                    break;
             }
         }
     }
